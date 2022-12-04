@@ -129,7 +129,7 @@ input.navbar-toggler{
     top: 0;
 }
 /* responsiveness */
-@media (min-width: 768px){
+@media (min-width: 1000px){
     .navbar-collapse{
         visibility: visible;
         display: contents;
