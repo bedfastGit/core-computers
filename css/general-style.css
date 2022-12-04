@@ -225,7 +225,7 @@ footer{
     padding-bottom: 30px;
 }
 /* apartado 1 de la galeria */
-@media (max-width: 768px){
+@media (max-width: 1000px){
     .card{
         float: none;
         margin: auto;
