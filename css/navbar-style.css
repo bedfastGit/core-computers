@@ -1,0 +1,166 @@
+/* Parte de Mario Rojas */
+
+/* style sheet for navbar */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header{
+    background-color: rgba(9, 2, 34, 0.95);
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+}
+.menu-bar{
+    height: 60px;
+    position: sticky;
+    z-index: 3;
+}
+.navbar-brand{
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.logo{
+    height: 40px !important;
+}
+/* menu list style */
+.lang-list{
+    list-style-type: none;
+}
+.menu-list{
+    list-style-type: none;
+    width: 150px;
+    visibility: hidden;
+    margin: auto !important;
+    padding-top: 50px !important;
+    background-color: rgba(9, 2, 34, 0.63);
+    backdrop-filter: blur(4px);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.menu-list a{
+    text-decoration: none !important;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center !important;
+    display: block;
+    margin: auto !important;
+    width: 60px;
+}
+.menu-list li{
+    float: inherit !important;
+    text-align: center;
+    padding: 10px;
+}
+.menu-list a:hover{
+    font-weight: 600;
+}
+.menu-list li:hover{
+    background-color: rgba(245, 245, 245, 0.12);
+    border-radius: 20px;
+}
+.navbar-collapse{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    width: 100%;
+    z-index: inherit;
+}
+.navbar-toggler:checked ~ .navbar-collapse .menu-list{
+    visibility: visible;
+}
+/* menu icon */
+.navbar-toggler{
+    cursor: pointer;
+    float: right;
+    padding: 30px 30px;
+    z-index: 4;
+}
+.icon-line{
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 24px;
+    background-color: whitesmoke;
+}
+.icon-line::before,
+.icon-line::after{
+    background-color: whitesmoke;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    transition: all .3s ease-out;
+}
+.icon-line::before{
+    top: 5px;
+}
+.icon-line::after{
+    top: -5px;
+}
+input.navbar-toggler{
+    width: 35px;
+    height: 40px;
+    opacity: 0;
+}
+.navbar-toggler{
+    position: relative;
+    right: 10px;
+    top: 8px
+}
+.toggler-icon{
+    position: absolute;
+    right: 14px;
+    top: 28px
+}
+.navbar-toggler:checked ~ .toggler-icon .icon-line{
+    background: transparent;
+}
+.navbar-toggler:checked ~ .toggler-icon .icon-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.navbar-toggler:checked ~ .toggler-icon .icon-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+/* responsiveness */
+@media (min-width: 768px){
+    .navbar-collapse{
+        visibility: visible;
+        display: contents;
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: left !important;
+        width: fit-content;
+    }
+    .menu-list li:hover{
+        background-color: rgba(245, 245, 245, 0);
+        border-radius: 20px;
+    }
+    .menu-list{
+        width: auto!important;
+        display: contents;
+        visibility: visible;
+    }
+    .menu-list li{
+        float: left !important;
+    }
+    .lang-list{
+        float: right !important;
+    }
+    .menu-list a:hover{
+        color: white;
+    }
+    .navbar-toggler{
+        display: none !important;
+    }
+    .toggler-icon{
+        display: none;
+    }
+}

@@ -1,0 +1,291 @@
+/* Parte de Mario Rojas */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #120546, #25099d, #0689b9);
+    font-family: 'Nunito Sans', sans-serif;
+    color: whitesmoke;
+}
+.embeded{
+    text-align: center;
+}
+.embeded iframe{
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 20px rgba(23, 237, 255, 0.89));
+    border-color: rgb(25, 246, 255);
+    border-width: thin;
+}
+.links-home{
+    height: 320px;
+    text-align: center;
+    width: 100%;
+}
+.home-child{
+    float: left;
+    width: 20%;
+}
+.home-child img{
+    width: 80%;
+    border-radius: 1000px;
+}
+.home-child:hover img{
+    filter: drop-shadow(0px 0px 10px #17edff);
+}
+.glass-top:hover h2{
+    visibility: visible
+}
+.link-1{
+    margin-left: 4%;
+}
+.link-2{
+    margin-left: 3%
+}
+.link-3{
+    margin-left: 3%
+}
+.link-4{
+    margin-left: 3%
+}
+.grey-text{
+    color: #b4b7ba
+}
+.banner{
+    height: 600px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-image: url(../media/img/4000x-anime-closeup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sm{
+    height: 120px
+}
+.banner img{
+    width: 42%;
+    position: absolute;
+    top: 280px;
+    left: 32%;
+    filter: drop-shadow(0px 0px 8px rgb(0, 21, 26, 0.8))
+}
+.ban2{
+    background-image: url(../media/img/7700-art.jpg)
+}
+.center-text{
+    text-align: center;
+}
+h3{
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+}
+h2{
+    padding-bottom: 10px;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    height: 425px;
+}
+.pc{
+    width: 90%;
+    margin: auto;
+    padding-top: 35px;
+}
+.pc a{
+    color: white;
+    font-weight: 800;
+}
+.pc a:visited{
+    color: #a3a3a3;
+}
+.pc-child{
+    float: left;
+    margin: 0px;
+}
+.pc-img img{
+    width: 80%;
+    filter: drop-shadow(0px 0px 30px rgba(11, 204, 250, 0.87))
+}
+.pc-img{
+    width: 55%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    animation-name: pc-anim;
+    animation-duration: 3s;
+}
+/* img animation */
+@keyframes pc-anim{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.pc-desc{
+    width: 35%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.spec-table{
+    text-align: center;
+    width: 87%;
+    background: linear-gradient(to top right, rgba(11, 3, 41, 0.7) 60%, rgba(18, 144, 144, 0.71));
+    backdrop-filter: blur(60px);
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto;
+}
+.spec-table td{
+    padding-right: 10px
+}
+.img1{
+    background-image: url(../media/img/plantilla-1x1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+    
+}
+.img2{
+    background-image: url(../media/img/4000x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+.img3{
+    background-image: url(../media/img/o11-ripoff.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+.div1{
+    width: 24%;
+    position: absolute;
+    left: 10%;
+}
+.div2{
+    width: 24%;
+    position: absolute;
+    left: 38%;
+}
+.div3{
+    width: 24%;
+    position: absolute;
+    left: 66%;
+}
+hr{
+    margin: auto;
+    width: 80%;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+/* apartado 1 de la galeria */
+.card{
+    background: linear-gradient(to top right, rgba(11, 3, 41, 0.7) 60%, rgba(18, 144, 144, 0.71));
+    backdrop-filter: blur(60px);
+    border-radius: 15px;
+    margin: 4px;
+    text-align: center;
+    float: left;
+    position: absolute;
+    height: auto;
+}
+.text1 p{
+    background-color: whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #121240;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.text1{
+    display: none;
+}
+.card:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    box-shadow: 0px 0px 24px rgba(58, 194, 255, 0.87);
+}
+.card:hover .text1{
+    display: contents;
+}
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+/* apartado 1 de la galeria */
+@media (max-width: 768px){
+    .card{
+        float: none;
+        margin: auto;
+        width: 60% !important;
+        margin-bottom: 20px;
+    }
+    .container{
+        margin: auto;
+        width: 95%;
+        height: auto;
+    }
+    .div1{
+        position: inherit;
+        width: inherit;
+    }
+    .div2{
+        position: inherit;
+        width: inherit;
+    }
+    .div3{
+        position: inherit;
+        width: inherit;
+    }
+    .banner{
+        height: 400px;
+    }
+    .sm{
+        height: 200px;
+    }
+    .banner img{
+        width: 60%;
+        left: 24%;
+        top: 300px;
+    }
+    .img1{
+        height: 300px
+    }
+    .img2{
+        height: 280px;
+    }
+    .img3{
+        height: 300px;
+    }
+    .pc-img{
+        width: 100%;
+    }
+    .pc-desc{
+        width: 100%;
+    }
+    .links-home{
+        height: auto;
+    }
+    .home-child{
+        float: none;
+        width: 40%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    .embeded iframe{
+        width: auto;
+    }
+}

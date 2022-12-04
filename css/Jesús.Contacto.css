@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right,#120546, #25099d, #0689b9);
+    font-family:'nunito', sans-serif
+
+}
+.contacto{
+    width: 500px;
+    background: #24303c;
+    padding: 30px;
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.contacto h1{
+    font-size:40px;
+}
+
+.contacto h4{
+    font-size: 40px
+}
+
+
+.datos-empresa i{
+    color: orange
+}
+
+#links{
+    font-size: 25px
+    
+}
+
+.imagenes{
+    width: 8%;
+}
+
